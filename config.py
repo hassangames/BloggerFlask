@@ -5,6 +5,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     SECRET_KEY = "HARDTOGUSSS"
+    DEBUG =True
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 465
     FLASK_APP = os.getenv('FLASK_APP')
@@ -15,7 +16,7 @@ class Config:
     FLASKY_MAIL_SUBJECT_PREFIX = '[HASSAN]'
     FLASKY_MAIL_SENDER = 'HASSAN Admin <halsmiri@ucas.edu.ps>'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost/flasky'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost/Blogger'
     ADMIN_MAIL = 'halsmiri@ucas.edu.ps'
     @staticmethod
     def init_db():
